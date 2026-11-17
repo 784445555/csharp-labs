@@ -8,7 +8,7 @@ class Program
         Console.InputEncoding = Encoding.UTF8;
         Console.OutputEncoding = Encoding.UTF8;
 
-        string text;
+        string? text;
         do
         {
             Console.Write("Жолды енгізіңіз: ");
@@ -28,7 +28,7 @@ class Program
         for (int i = 0; i < text.Length; i++)
         {
             char ch = text[i];
-            if (ch < 0 || ch > 9) // цифр емес болса, қосамыз
+            if (ch < '0' || ch > '9') // цифр емес болса, қосамыз ('0'..'9' символдары)
                 result += ch;
         }
         return result;
