@@ -15,9 +15,9 @@ class Program
         Console.WriteLine("Матрица (Random(" + nomer + ")):");
         PrintMatrix(matrix);
 
-        int maxSum;
-        int maxRow = FindMaxSumRow(matrix, out maxSum);
-        Console.WriteLine("Элементтерінің қосындысы ең үлкен жол: " + maxRow + "-жол, қосындысы = " + maxSum);
+        int minSum;
+        int minRow = FindMinSumRow(matrix, out minSum);
+        Console.WriteLine("Элементтерінің қосындысы ең кіші жол: " + minRow + "-жол, қосындысы = " + minSum);
 
         // Өз тестім 1: барлық элемент теріс (бастапқы мән 0 болса, қате нәтиже шығар еді)
         int[,] test1 =
@@ -48,30 +48,30 @@ class Program
         Console.WriteLine(title + ":");
         PrintMatrix(m);
         int sum;
-        int row = FindMaxSumRow(m, out sum);
-        Console.WriteLine("Элементтерінің қосындысы ең үлкен жол: " + row + "-жол, қосындысы = " + sum);
+        int row = FindMinSumRow(m, out sum);
+        Console.WriteLine("Элементтерінің қосындысы ең кіші жол: " + row + "-жол, қосындысы = " + sum);
     }
 
-    // 4-нұсқа: қосындысы ең үлкен жолдың нөмірі (1-ден бастап) және сол қосынды.
-    // Бірдей болса, бірінші жол қалады (тек қатаң үлкені ғана ауыстырады).
-    static int FindMaxSumRow(int[,] m, out int maxSum)
+    // 4-нұсқа: қосындысы ең кіші жолдың нөмірі (1-ден бастап) және сол қосынды.
+    // Бірдей болса, бірінші жол қалады (тек қатаң кішісі ғана ауыстырады).
+    static int FindMinSumRow(int[,] m, out int minSum)
     {
         int rows = m.GetLength(0);
         int cols = m.GetLength(1);
 
-        maxSum = RowSum(m, 0, cols); // бастапқы мән - бірінші жолдың қосындысы
-        int maxRowIndex = 0;
+        minSum = RowSum(m, 0, cols); // бастапқы мән - бірінші жолдың қосындысы
+        int minRowIndex = 0;
 
         for (int i = 1; i < rows; i++)
         {
             int sum = RowSum(m, i, cols);
-            if (sum > maxSum)
+            if (sum < minSum)
             {
-                maxSum = sum;
-                maxRowIndex = i;
+                minSum = sum;
+                minRowIndex = i;
             }
         }
-        return maxRowIndex + 1;
+        return minRowIndex + 1;
     }
 
     // Бір жолдың қосындысы цикл арқылы
