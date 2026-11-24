@@ -28,113 +28,34 @@
 ## Git
 `git log --oneline --graph --all` командасының нәтижесі:
 ```
-    c4fb2bc (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from 784445555/task6-defense
+* 85a782e README: git log updated, defense video link
+* 17bde5d README: git log updated, defense video link
+*   c4fb2bc Merge pull request #2 from 784445555/task6-defense
 |\  
-| * 6e14763 (origin/task6-defense, task6-defense) Task6: output text changed to spaces count
+| * 6e14763 Task6: output text changed to spaces count
 | * 341ec96 Task6: remove spaces instead of digits (RemoveSpaces)
 |/  
 *   b0edeb0 Merge pull request #1 from 784445555/task5-defense
 |\  
-| * 0868cb8 (origin/task5-defense, task5-defense) Task 5: шығару жұмысы
+| * 0868cb8 Task 5: шығару жұмысы
 |/  
 * ba40aad Task5, Task6: VS Code-тағы нәтиже скриншоттары қосылды
 * 377a920 README: топ атауы түзетілді (ИСк-25-1б), Task6 жеке тест нәтижесі жаңартылды
 *   bb8e350 Merge branch 'task6'
 |\  
-| * d215cb1 (origin/task6, task6) Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
-| * a2a1973 Task6: алынған цифрлар санын шығару
-| * 79e306e Task6: цифрды тексеру түзетілді (ch > 9 емес:
-*   c4fb2bc (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from 784445555/task6-defense
-|\  
-| * 6e14763 (origin/task6-defense, task6-defense) Task6: output text changed to spaces count
-| * 341ec96 Task6: remove spaces instead of digits (RemoveSpaces)
-|/  
-*   b0edeb0 Merge pull request #1 from 784445555/task5-defense
-|\  
-| * 0868cb8 (origin/task5-defense, task5-defense) Task 5: шығару жұмысы
-|/  
-* ba40aad Task5, Task6: VS Code-тағы нәтиже скриншоттары қосылды
-* 377a920 README: топ атауы түзетілді (ИСк-25-1б), Task6 жеке тест нәтижесі жаңартылды
-*   bb8e350 Merge branch 'task6'
-|\  
-| * d215cb1 (origin/task6, task6) Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
+| * d215cb1 Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
 | * a2a1973 Task6: алынған цифрлар санын шығару
 | * 79e306e Task6: цифрды тексеру түзетілді (ch > 9 емес, ch > '9' символымен салыстыру)
 | * 26b66f5 Task6: жолды do-while арқылы енгізу және цифрларды алып тастау методы
 |/  
 *   910c219 Merge branch 'task5'
 |\  
-| * 9c88757 (origin/task5, task5) Task5: README есебі (тесттер, сұрақтарға жауап)
+| * 9c88757 Task5: README есебі (тесттер, сұрақтарға жауап)
 | * a1b17f2 Task5: өз тесттерім (барлығы теріс, бірдей қосынды)
 | * 31bf785 Task5: ең үлкен қосындысы бар жолды табу методы (4-нұсқа)
 | * 5b5e493 Task5: матрицаны толтыру және экранға шығару
-:
-*   c4fb2bc (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from 784445555/task6-defense
-|\  
-| * 6e14763 (origin/task6-defense, task6-defense) Task6: output text changed to spaces count
-| * 341ec96 Task6: remove spaces instead of digits (RemoveSpaces)
 |/  
-*   b0edeb0 Merge pull request #1 from 784445555/task5-defense
-|\  
-| * 0868cb8 (origin/task5-defense, task5-defense) Task 5: шығару жұмысы
-|/  
-* ba40aad Task5, Task6: VS Code-тағы нәтиже скриншоттары қосылды
-* 377a920 README: топ атауы түзетілді (ИСк-25-1б), Task6 жеке тест нәтижесі жаңартылды
-*   bb8e350 Merge branch 'task6'
-|\  
-| * d215cb1 (origin/task6, task6) Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
-| * a2a1973 Task6: алынған цифрлар санын шығару
-| * 79e306e Task6: цифрды тексеру түзетілді (ch > 9 емес:
-*   c4fb2bc (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from 784445555/task6-defense
-|\  
-| * 6e14763 (origin/task6-defense, task6-defense) Task6: output text changed to spaces count
-| * 341ec96 Task6: remove spaces instead of digits (RemoveSpaces)
-|/  
-*   b0edeb0 Merge pull request #1 from 784445555/task5-defense
-|\  
-| * 0868cb8 (origin/task5-defense, task5-defense) Task 5: шығару жұмысы
-|/  
-* ba40aad Task5, Task6: VS Code-тағы нәтиже скриншоттары қосылды
-* 377a920 README: топ атауы түзетілді (ИСк-25-1б), Task6 жеке тест нәтижесі жаңартылды
-*   bb8e350 Merge branch 'task6'
-|\  
-| * d215cb1 (origin/task6, task6) Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
-| * a2a1973 Task6: алынған цифрлар санын шығару
-| * 79e306e Task6: цифрды тексеру түзетілді (ch > 9 емес, ch > '9' символымен салыстыру)
-| * 26b66f5 Task6: жолды do-while арқылы енгізу және цифрларды алып тастау методы
-|/  
-*   910c219 Merge branch 'task5'
-|\  
-| * 9c88757 (origin/task5, task5) Task5: README есебі (тесттер, сұрақтарға жауап)
-| * a1b17f2 Task5: өз тесттерім (барлығы теріс, бірдей қосынды)
-| * 31bf785 Task5: ең үлкен қосындысы бар жолды табу методы (4-нұсқа)
-| * 5b5e493 Task5: матрицаны толтыру және экранға шығару
-:
-*   c4fb2bc (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from 784445555/task6-defense
-|\  
-| * 6e14763 (origin/task6-defense, task6-defense) Task6: output text changed to spaces count
-| * 341ec96 Task6: remove spaces instead of digits (RemoveSpaces)
-|/  
-*   b0edeb0 Merge pull request #1 from 784445555/task5-defense
-|\  
-| * 0868cb8 (origin/task5-defense, task5-defense) Task 5: шығару жұмысы
-|/  
-* ba40aad Task5, Task6: VS Code-тағы нәтиже скриншоттары қосылды
-* 377a920 README: топ атауы түзетілді (ИСк-25-1б), Task6 жеке тест нәтижесі жаңартылды
-*   bb8e350 Merge branch 'task6'
-|\  
-| * d215cb1 (origin/task6, task6) Task6: README есебі (тесттер, кездескен қате, Git) және түбірдегі мазмұн
-| * a2a1973 Task6: алынған цифрлар санын шығару
-| * 79e306e Task6: цифрды тексеру түзетілді (ch > 9 емес, ch > '9' символымен салыстыру)
-| * 26b66f5 Task6: жолды do-while арқылы енгізу және цифрларды алып тастау методы
-|/  
-*   910c219 Merge branch 'task5'
-|\  
-| * 9c88757 (origin/task5, task5) Task5: README есебі (тесттер, сұрақтарға жауап)
-| * a1b17f2 Task5: өз тесттерім (барлығы теріс, бірдей қосынды)
-| * 31bf785 Task5: ең үлкен қосындысы бар жолды табу методы (4-нұсқа)
-| * 5b5e493 Task5: матрицаны толтыру және экранға шығару
-:
+* bd6b51f Репозиторий құрылымы: .gitignore және түбірдегі README
 ```
 
 1. task5 тармағында жасаған коммиттерім main-ге `git merge --no-ff task5` арқылы түсті: main-де біріктіру коммиті пайда болды, ал task5-тің барлық коммиттері main тарихына кірді. Біріктіруден кейін task5 тармағы жойылмады, ол сол соңғы коммитте тұр және GitHub-та Branches бөлімінде көрінеді.
@@ -143,5 +64,6 @@
 
 ## ЖИ қолдану
 ЖИ (Claude) қолдандым: тапсырма шартын беріп, код пен README жобасын сұрадым. Цифрды тексерудегі қатені іске қосу нәтижесінен байқап, түзеттім.
+
 ## Қорғау видеосы
 https://t.me/tecrgr
