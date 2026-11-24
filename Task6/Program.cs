@@ -16,7 +16,7 @@ class Program
         } while (string.IsNullOrEmpty(text));
 
         int removedCount;
-        string result = RemoveDigits(text, out removedCount);
+        string result = RemoveSpaces(text, out removedCount);
 
         Console.WriteLine("Бастапқы жол: [" + text + "]");
         Console.WriteLine("Нәтиже:       [" + result + "]");
@@ -24,18 +24,17 @@ class Program
     }
 
     // 2-нұсқа: жолдағы цифрларды алып тастау, алынған цифрлар санын out арқылы қайтару
-    static string RemoveDigits(string text, out int removedCount)
+    static string RemoveSpaces(string text, out int removedCount)
     {
         string result = "";
         removedCount = 0;
         for (int i = 0; i < text.Length; i++)
         {
             char ch = text[i];
-            if (ch < '0' || ch > '9') // цифр емес болса, қосамыз ('0'..'9' символдары)
+            if (ch !=  ' ') // цифр емес болса, қосамыз ('0'..'9' символдары)
                 result += ch;
             else
-                removedCount++;
-        }
+                removedCount++;        }
         return result;
     }
 }
