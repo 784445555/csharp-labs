@@ -20,10 +20,10 @@ class Program
 
         Console.WriteLine("Бастапқы жол: [" + text + "]");
         Console.WriteLine("Нәтиже:       [" + result + "]");
-        Console.WriteLine("Алынған цифрлар саны = " + removedCount);
+         Console.WriteLine("Алынған бос орындар саны = " + removedCount);
     }
 
-    // 2-нұсқа: жолдағы цифрларды алып тастау, алынған цифрлар санын out арқылы қайтару
+    // Қорғау: жолдағы бос орындарды алып тастау, олардың санын out арқылы қайтару
     static string RemoveSpaces(string text, out int removedCount)
     {
         string result = "";
@@ -31,7 +31,7 @@ class Program
         for (int i = 0; i < text.Length; i++)
         {
             char ch = text[i];
-            if (ch !=  ' ') // цифр емес болса, қосамыз ('0'..'9' символдары)
+            if (ch !=  ' ') // бос орын емес болса, қосамыз 
                 result += ch;
             else
                 removedCount++;        }
