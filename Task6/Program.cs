@@ -16,26 +16,25 @@ class Program
         } while (string.IsNullOrEmpty(text));
 
         int removedCount;
-        string result = RemoveDigits(text, out removedCount);
+        string result = RemoveSpaces(text, out removedCount);
 
         Console.WriteLine("Бастапқы жол: [" + text + "]");
         Console.WriteLine("Нәтиже:       [" + result + "]");
-        Console.WriteLine("Алынған цифрлар саны = " + removedCount);
+         Console.WriteLine("Алынған бос орындар саны = " + removedCount);
     }
 
-    // 2-нұсқа: жолдағы цифрларды алып тастау, алынған цифрлар санын out арқылы қайтару
-    static string RemoveDigits(string text, out int removedCount)
+    // Қорғау: жолдағы бос орындарды алып тастау, олардың санын out арқылы қайтару
+    static string RemoveSpaces(string text, out int removedCount)
     {
         string result = "";
         removedCount = 0;
         for (int i = 0; i < text.Length; i++)
         {
             char ch = text[i];
-            if (ch < '0' || ch > '9') // цифр емес болса, қосамыз ('0'..'9' символдары)
+            if (ch !=  ' ') // бос орын емес болса, қосамыз 
                 result += ch;
             else
-                removedCount++;
-        }
+                removedCount++;        }
         return result;
     }
 }
